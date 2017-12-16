@@ -29,6 +29,8 @@ Example usage
     
 API
 ###
+The API is simple and small
+
 ``DOHClient.query(hostname, type, dnssec)``
     ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a complete DNS response as a python dictionary.
 
