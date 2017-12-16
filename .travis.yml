@@ -1,23 +1,19 @@
 language: python
 sudo: false
-
 python:
-  - 3.6
-  - 3.7-dev
-  - nightly
-
+- 3.6
+- 3.7-dev
+- nightly
 install:
-  - python setup.py install
-  - pip install pytest pytest-asyncio
-
+- python setup.py install
+- pip install pytest pytest-asyncio
 script: py.test --doctest-module --ignore=setup.py --doctest-glob='*.rst'
-
 deploy:
   skip_cleanup: true
   provider: pypi
   user: dijkstra
   password:
-    secure: cMY94zBzgfI04B5j/XKhxg7qRGCBUprZmQSiK1G90z+hodf8Ye4XbJY8ekdm+eBnvI5RPDy0GDmzCjzCa3mPOlcsYUmpPSeGSrtlH/FKoMCxZKry0MqwkzFUbgein3yB5AckAmigKt7qsPWE5lgwWlHxXh8Ng8gmmmU6SqSLghS3gNW4ow6hFkTKGzhj5OHwiQiC3WUbxjGWBLdaalipaC7izGJZOA+zAQ18xWA/KyMkki2QWdOdmVwiBdwJCxbn8JCtPnIlcUdtWGYxx9ZIQCsjWhfR/hzHTLdthEjGJketZ+cYI5KXFZEV5QTlXPJWt3mxNKaMfYjgOTdosel0D09NC2b32vTq8bG7eoYDEi4ZS4CAq4y4THBeLlkuQ659heOCq0X9eEN5Po9252GBshIdu+VmBe8zhv2TT2ARrrjKt9N4KCE3VYNzM46WODMo59qS0glHgGA4Tozab75lvgOSmth02m3sEPlJK10sTDlqFOxUrHwTGIyBcLAWuPpgbg03ExR0ktO4KCz4zXQNcFP4yQSD7Az6mys6bkxtztxwCyI6NmbBDf/8pUHOYAoI0Ruko9+4o2XkPXZLjz1UqIUeDy9NcwmVh+StJ52goOyESJ1Hpdw32ZTamUCPCn6Y1JA5zpXW7+NK8uq8OeE5aZ4CvjPEYjo64zvT1T/i074=
+    secure: noNu83YeUrY//XP3BIX9GzIRtcWPsHO4lsPYGqOC9/DB3z3CBVBXgmtDg1qTAA8rlfR0+GA+FuJh+OdFPYG8VrnrsQHYsC6N/8LJoORqoVNG23sk/vWq2HYnJFPW983k+LpKk3MkvJPehDtoqxnnxgr+UGPfCZteFeMdCWUnYmLP+LP7EvJ1CYzKk4KHkJdarQMQe0ENMfUFST99HTAnwVkvdZSE/ePDgeStwkwH+dRQiQbB0aYcuLSYVzqvBwc4lPisldcp6Kpdp6C6mOVAKC09xW/57FxjHUbOXr/ijUPZIRw85PtOTjKXkCkcmv4c+cPpMX6i0Q+x+NQokokkLs94C7B94gHO1lIXvsLbkVuOAsMiOH/uFD2k7nfk1ngAybs+GJEl9b6ZbeTX8REiYruh2MnPa+pR8oJXfIK25/juhHsLGKN6nDx2Y9gsIbJiv+asT8JAK0a+h3QO4IL2vLg/RrgvCvXX2tqCycIM7LJ+DMy3Szoc+5xgsTiBaikx4jq56GbMHYuo4XOeTvmLoM30x9t8xaRGqL0755XPY5X3gAtx041/zT4RtfT4IHXReHyDFq19z8w9FHtbG961tpSPqt4Whtvj+0daQfNr2gaVcXhtTgiyKpu+Nb6//UTohLp8UYjyXKWMVzh+KNhFpHQuD77pWppD3FpavBw/3RU=
   on:
     tags: true
     branch: master
