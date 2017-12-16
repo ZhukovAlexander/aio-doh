@@ -11,6 +11,7 @@ setup(
     keywords='python dns https asyncio',
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
+    install_requers=['aiohttp'],
     py_modules=['doh'],
     classifiers=[
         'Development Status :: 3 - Alpha',
