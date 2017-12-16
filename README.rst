@@ -39,3 +39,11 @@ The API is simple and small
 
 ``DOHClient.gethostbyname(hostname, type, dnssec)``
     ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns the first IP adress found if any or raises an error.
+
+Documentation
+#############
+TODO
+
+Contributing
+############
+File and issue or create a pull request.
