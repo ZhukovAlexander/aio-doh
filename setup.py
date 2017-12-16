@@ -5,11 +5,12 @@ with codecs.open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
 
 setup(
-    name='doh',
+    name='aio-doh',
     description='Asynchronous DNS-over-HTTPS client for Python',
     long_description=readme,
     keywords='python dns https asyncio',
     use_scm_version=True,
+    python_requires=">=3.6",
     setup_requires=['setuptools_scm'],
     install_requires=['aiohttp'],
     py_modules=['doh'],
