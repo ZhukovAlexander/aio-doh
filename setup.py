@@ -13,7 +13,7 @@ setup(
     python_requires=">=3.6",
     setup_requires=['setuptools_scm'],
     install_requires=['aiohttp'],
-    py_modules=['doh'],
+    packages=['doh',],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
