@@ -6,6 +6,9 @@ with codecs.open('README.rst', 'r', 'utf-8') as f:
 
 setup(
     name='aio-doh',
+    url='https://github.com/ZhukovAlexander/aio-doh',
+    author='Alexander Zhuko',
+    author_email='zhukovaa90@gmail.com',
     description='Asynchronous DNS-over-HTTPS client for Python',
     long_description=readme,
     keywords='python dns https asyncio',
