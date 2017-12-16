@@ -13,6 +13,7 @@ install:
 script: py.test --doctest-module --ignore=setup.py --doctest-glob='*.rst'
 
 deploy:
+  skip_cleanup: true
   provider: pypi
   user: dijkstra
   password:
