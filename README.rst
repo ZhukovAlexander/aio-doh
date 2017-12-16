@@ -19,10 +19,10 @@ Example usage
 .. code-block:: python
 
     >>> from doh import DOHClient
-    >>>from asyncio import get_event_loop
+    >>> from asyncio import get_event_loop
     >>>
     >>> loop = get_event_loop()
-    >>>client = DOHClient(loop)
+    >>> client = DOHClient(loop)
     >>> loop.run_until_complete(client.resolve('example.com'))
     ['93.184.216.34']
     >>>
