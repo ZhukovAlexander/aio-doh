@@ -2,9 +2,9 @@
     :target: https://travis-ci.org/ZhukovAlexander/aio-doh
     
 *******
-aio-doh
+D'oh!
 *******
-Is a tiny asynchronous client for Google's Public `DNS-over-HTTPS <https://developers.google.com/speed/public-dns/docs/dns-over-https>`_ service. It is built on top of ``asyncio`` and ``aiohttp``
+**aio-doh** is a tiny asynchronous client for Google's Public `DNS-over-HTTPS <https://developers.google.com/speed/public-dns/docs/dns-over-https>`_ (DOH) service. It is built on top of ``asyncio`` and ``aiohttp``
 
 Installation
 ############
@@ -29,16 +29,14 @@ Example usage
     
 API
 ###
-The API is simple and small
 
-``DOHClient.query(hostname, type, dnssec)``
-    ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a complete DNS response as a python dictionary.
+The API is simple and small:
 
-``DOHClient.resolve(hostname, type, dnssec)``
-    ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a list of IP adresses.
+* ``DOHClient.query(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a complete DNS response as a python dictionary.
 
-``DOHClient.gethostbyname(hostname, type, dnssec)``
-    ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns the first IP adress found if any or raises an error.
+* ``DOHClient.resolve(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a list of IP adresses.
+
+* ``DOHClient.gethostbyname(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns the first IP adress found if any or raises an error.
 
 Documentation
 #############
@@ -46,4 +44,4 @@ TODO
 
 Contributing
 ############
-File and issue or create a pull request.
+File an issue or create a pull request.
