@@ -27,6 +27,22 @@ Example usage
     >>> loop.run_until_complete(client.resolve('example.com'))
     ['93.184.216.34']
     >>>
+    >>> from pprint import pprint as pp
+    >>> pp(loop.run_until_complete(client.query('example.com', type='AAAA'))) # doctest:+ELLIPSIS
+    {'AD': True,
+     'Additional': [],
+     'Answer': [{'TTL': ..., # TTL value here
+                 'data': '2606:2800:220:1:248:1893:25c8:1946',
+                 'name': 'example.com.',
+                 'type': 28}],
+     'CD': False,
+     'Question': [{'name': 'example.com.', 'type': 28}],
+     'RA': True,
+     'RD': True,
+     'Status': 0,
+     'TC': False,
+     'edns_client_subnet': '0.0.0.0/0'}
+    >>>
 
 API
 ###
