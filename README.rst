@@ -31,7 +31,7 @@ Example usage
     >>> pp(loop.run_until_complete(client.query('example.com', type='AAAA'))) # doctest:+ELLIPSIS
     {'AD': True,
      'Additional': [],
-     'Answer': [{'TTL': ..., # TTL value here
+     'Answer': [{'TTL': ...,
                  'data': '2606:2800:220:1:248:1893:25c8:1946',
                  'name': 'example.com.',
                  'type': 28}],
