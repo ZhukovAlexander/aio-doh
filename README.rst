@@ -12,7 +12,7 @@ Installation
 .. code-block:: bash
 
     pip install aio-doh
-    
+
 Example usage
 #############
 
@@ -23,10 +23,11 @@ Example usage
     >>>
     >>> loop = get_event_loop()
     >>> client = DOHClient(loop)
+    >>>
     >>> loop.run_until_complete(client.resolve('example.com'))
     ['93.184.216.34']
     >>>
-    
+
 API
 ###
 
@@ -56,9 +57,11 @@ The API is simple and small:
     Returns:
         First IP adress found if any or raises an error.
 
+
 Documentation
 #############
 TODO
+
 
 Contributing
 ############
