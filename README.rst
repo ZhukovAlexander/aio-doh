@@ -32,11 +32,29 @@ API
 
 The API is simple and small:
 
-* ``DOHClient.query(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a complete DNS response as a python dictionary.
+* ``DOHClient.query(hostname, type, dnssec)`` 
+    Params:
+        ``hostname`` - name of a target host; 
+        ``type`` - DNS record type for a query; 
+        ``dnssec`` - enable DNSSEC validation. 
+    Returns: 
+        Complete DNS response as a python dictionary.
 
-* ``DOHClient.resolve(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns a list of IP adresses.
+* ``DOHClient.resolve(hostname, type, dnssec)``
+    Params:
+        ``hostname`` - name of a target host; 
+        ``type`` - DNS record type for a query; 
+        ``dnssec`` - enable DNSSEC validation. 
+    Returns: 
+       List of IP adresses.
 
-* ``DOHClient.gethostbyname(hostname, type, dnssec)`` where ``hostname`` - name of a target host; ``type`` - DNS record type for a query; ``dnssec`` - enable DNSSEC validation. Returns the first IP adress found if any or raises an error.
+* ``DOHClient.gethostbyname(hostname, type, dnssec)``
+    Params:
+        ``hostname`` - name of a target host;
+        ``type`` - DNS record type for a query;
+        ``dnssec`` - enable DNSSEC validation.
+    Returns:
+        First IP adress found if any or raises an error.
 
 Documentation
 #############
