@@ -4,7 +4,7 @@
 *******
 D'oh!
 *******
-**aio-doh** is a tiny asynchronous client for Google's Public `DNS-over-HTTPS <https://developers.google.com/speed/public-dns/docs/dns-over-https>`_ (DOH) service. It is built on top of ``asyncio`` and ``aiohttp``
+**aio-doh** is a tiny asynchronous client for Google's Public `DNS-over-HTTPS <https://developers.google.com/speed/public-dns/docs/dns-over-https>`_ (DOH) service. Main advanteges of DOH is increased security due to DNSSEC and also speed, reliability and performance gains. The library is built on top of ``asyncio`` and ``aiohttp``.
 
 Installation
 ############
